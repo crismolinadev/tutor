@@ -13,6 +13,7 @@ return [
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'request' => [
+            'cookieValidationKey' => 'jPXqBa4tIrupZ26d65Ua3tBAS6Wd1sM5',
             'csrfParam' => '_csrf-frontend',
         ],
         'user' => [
@@ -23,6 +24,7 @@ return [
         'session' => [
             // this is the name of the session cookie used for login on the frontend
             'name' => 'advanced-frontend',
+            'savePath' => sys_get_temp_dir(),
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
